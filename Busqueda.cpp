@@ -6,6 +6,14 @@
 #include "Busqueda.h"
 
 //implementacion de busqueda lineal
+/*
+* Complejidad temporal:
+* Mejor caso: O(1)
+* Peor caso: O(n)
+* Caso promedio: O(n)
+* Complejidad espacial: O(1)
+*/
+
 int busquedaLineal(const std::vector<int> &datos, int objetivo) {
     const int n = datos.size();
 
@@ -18,6 +26,14 @@ int busquedaLineal(const std::vector<int> &datos, int objetivo) {
 }
 
 //implementacion de bsuqueda binaria
+/*
+* Complejidad temporal:
+* Mejor caso: O(1)
+* Peor caso: O(log2 n)
+* Caso promedio: O(log2 n)
+* Complejidad espacial: O(1)
+*/
+
 int busquedaBinaria(const std::vector<int> &datos, int objetivo) {
     int izquierda = 0;
     int derecha = datos.size() - 1;
@@ -37,6 +53,14 @@ int busquedaBinaria(const std::vector<int> &datos, int objetivo) {
 }
 
 //implementacion de busquedatrinaria
+/*
+* Complejidad temporal:
+* Mejor caso: O(1)
+* Peor caso: O(log3 n)
+* Caso promedio: O(log3 n)
+* Complejidad espacial: O(1)
+*/
+
 int busquedaTrinaria(const std::vector<int> &datos, int objetivo) {
     int izquierda = 0;
     int derecha = datos.size() - 1;
