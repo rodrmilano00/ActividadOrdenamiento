@@ -20,10 +20,10 @@ int busquedaLineal(const std::vector<int> &datos, int objetivo) {
 //implementacion de bsuqueda binaria
 int busquedaBinaria(const std::vector<int> &datos, int objetivo) {
     int izquierda = 0;
-    int derecha = 0;
+    int derecha = datos.size() - 1;
 
     while (izquierda <= derecha) {
-        const int centro = derecha + (derecha - izquierda) / 2;
+        const int centro = izquierda + (derecha - izquierda) / 2;
 
         if (datos[centro] == objetivo) {
             return centro;
@@ -57,7 +57,7 @@ int busquedaTrinaria(const std::vector<int> &datos, int objetivo) {
         if (objetivo < datos[corteIzq]) {
             derecha = corteIzq - 1;
         } else if (objetivo > datos[corteDer]) {
-            izquierda = corteIzq + 1;
+            izquierda = corteDer + 1;
         } else {
             izquierda = corteIzq + 1;
             derecha = corteDer - 1;
