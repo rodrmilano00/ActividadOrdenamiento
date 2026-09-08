@@ -1,7 +1,23 @@
 // ActividadOrdenamiento
 // Created by luis1 on 07/09/2026.
 // A01254706
-//
+/*
+ *Comparando el desempeño de la BusquedaLineal, BusquedaBinaria y BusquedaTrinaria
+*Metodología:
+*  1. Para cada tamaño de entrada n se genera un vector<int> de n elementos
+*     aleatorios y se ordena de forma ascendente. La generación y el ordenamiento NO se incluyen en
+*     el tiempo reportado.
+*  2. Se seleccionan 30 índices aleatorios del vector y se busca el valor
+*     almacenado en cada uno de ellos.
+*  3. Para cada una de las 30 búsquedas se mide el tiempo empleado
+*     por la función de búsqueda, usando
+*     chrono::high_resolution_clock.
+*  4. Se calcula el promedio de las 30 mediciones para cada combinación
+*     (algoritmo, tamaño de entrada) y se reporta en microsegundos (us).
+*  5. Los mismos 30 índices se reutilizan para los tres algoritmos en un
+*     mismo tamaño de entrada.
+*
+*/
 
 #include <iostream>
 #include <algorithm>
