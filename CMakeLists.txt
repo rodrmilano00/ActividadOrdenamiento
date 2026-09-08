@@ -3,4 +3,6 @@ project(ActividadOrdenamiento)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(ActividadOrdenamiento main.cpp)
+add_executable(ActividadOrdenamiento main.cpp
+        Busqueda.cpp
+        Busqueda.h)
